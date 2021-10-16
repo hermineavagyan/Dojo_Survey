@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/post_results" method="POST">
+            <div class="input-group mb-3 mt-5">
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+            </div>
+            <!-- <div class="input-group mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Dojo Location</label>
+                <div class="input-group-text">
+                    <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" value="Los Angeles"
+                            aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" name="location">
+            </div> -->
+            <div class="input-group form-check">
+                    <input class="form-check-input" type="checkbox" name="location" value="Los Angeles" id ="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Los Angeles</label>
+                </div>
+                <div class="input-group form-check">
+                    <input class="form-check-input" type="checkbox" name="location" value="Seattle" id ="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Dallas</label>
+                </div>
+                <div class="input-group form-check">
+                    <input class="form-check-input" type="checkbox" name="location" value="New-York" id ="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">New-York</label>
+                </div>
+                <div class="input-group form-check">
+                    <input class="form-check-input" type="checkbox" name="location" value="Online" id ="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Online</label>
+                </div>
+            <div class="Form-group">
+                <label>Favourite Language</label>
+                <select class="form-select" id="exampleFormControlInput1" name="language">
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>C#</option>
+                </select>
+            </div>
+
+            
+
+
+            <div class="Form-group">
+                <label for="exampleFormControlTextarea1">Comment(optional)</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comments"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
